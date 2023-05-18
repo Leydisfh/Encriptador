@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    box-sizing: border-box;
 }
 
 
@@ -100,24 +101,32 @@ body{
 
 }
 
-.respuesta{
+
+#respuesta{
     padding: 15px;
-    width:50%;
-    margin: 25px auto;
+    width:80%;
+    height: auto;
+    margin: 20px 30px;
+    border: none;
     background: #fff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 15px;
-}
-
-
-.respuesta h3{
     text-align: center;
-    font-size: 1rem;
+}
+
+
+#respuesta::placeholder{
+    color: #6583A7;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#respuesta:focus{
+    outline: none;
     padding: 5px;
 }
 
-.respuesta p{
-    padding: 5px;
-    font-size: 0.8rem;
-    color: #495057;
-}
+
+
+

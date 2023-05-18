@@ -15,7 +15,7 @@
     <main>
         <section class="encriptador"> 
             <div class="content">
-                <textarea name="" class="texto" cols="20" rows="8" placeholder="Ingrese el texto aquí"></textarea>
+                <textarea id="entrada_texto" class="texto" cols="20" rows="8" placeholder="Ingrese el texto aquí"></textarea>
 
         </div>
         <div class="advertencia">
@@ -23,13 +23,11 @@
         </div>
             
                 <div class="seccion_encriptados">
-                    <button class="encriptar" id="encriptar">Encriptar</button>
+                    <button class="encriptar" id="btn_encriptar">Encriptar</button>
                     <button class="desencriptar" >Desencriptar</button>
                 </div>
-                    <div class="respuesta">
-                        <h3> Ningun mensaje fue encontrado</h3> 
-                        <p> Ingresa el texto que desees encriptar o desencriptar</p>
-                </div>
+                <textarea id="respuesta" cols="30" rows="10" placeholder="Ningun mensaje fue encontrado." ></textarea>
+                    
             
         </section>
     </main>
