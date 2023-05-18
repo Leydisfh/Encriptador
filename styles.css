@@ -2,9 +2,8 @@
     margin: 0;
 }
 
-.encriptador{
+body{
     background-color: #F3F5FC;
-    height: 932px;
     width: 100%;
     
 }
@@ -14,7 +13,7 @@
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3rem;
-    font-weight: 450;
+    font-weight: 500;
     line-height: 116px;
     letter-spacing: 0em;
     text-align: left;
@@ -25,48 +24,48 @@
 
 /*Input de ingreso de texto*/
 
-#texto{
+.texto{
     border: none;
     width: 80%;
     margin-left: 15px;
     background-color: #F3F5FC;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
 }
 
-#texto::placeholder{
+.texto::placeholder{
     color: #6583A7;
     font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
-#texto:focus{
-    /*outline: none;*/
-    outline-color: #6583A7;
+.texto:focus{
+    outline: none;
     padding: 5px;
 }
 
 /*Aviso de advertencia*/
 .advertencia{
     display: flex;
-    margin-top:60px ;
-    font-size:0.7em;
+    font-size:0.9em;
     margin-left: 15px;
-    color: #495057;
-    
+    color: #6583A7;
     
 }
 
-.material-symbols-outlined{
-    color: #6583A7;
-    width: 20px;
-    margin-right: 5px;
+
+.advertencia::before{
+    content: url(./imagen/bi_exclamation-circle-fill.png);
+   margin-right: 4px;
 }
+
+
 
 
 /*bloque final*/
 .seccion_encriptados{
-    margin: auto;
+    margin:20px auto;
     margin-top: 20px;
     width: 50%;
     display: flex;
@@ -80,7 +79,7 @@
 .encriptar,
 .desencriptar{
     padding: 10px;
-    border-radius: 8px;
+    border-radius:15px;
     border: none;
     width: 100%;
     margin-bottom: 15px;
@@ -88,6 +87,7 @@
 }
 
 .encriptar{
+    margin-top: 20px;
     background-color: #6583A7;
     color: #fff;
     
@@ -101,7 +101,9 @@
 }
 
 .respuesta{
-    padding: 20px;
+    padding: 15px;
+    width:50%;
+    margin: 25px auto;
     background: #fff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 15px;
