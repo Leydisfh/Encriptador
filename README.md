@@ -1,2 +1,2 @@
 # Encriptador
-Sistema de encriptador de texto
+Sistema de encriptador de texto diseñado para mobile
